@@ -1,9 +1,44 @@
 // Listener for Nav bar
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-  });
+//document.addEventListener('DOMContentLoaded', function() {
+  //    var elems = document.querySelectorAll('.sidenav');
+  //  var instances = M.Sidenav.init(elems, options);
+  //});
 
 // save search results in local storage 
 
-// fetch information for apis
+// function for weatehr api 
+function getWeather() {
+  var searchCity = $("#searchCity").val();
+
+ //fetch api wether
+ fetch(
+  "https://api.openweathermap.org/data/2.5/forecast?q=" +
+   searchCity +
+  "&appid=8f62257571888eedbb0ada9d2502e1fa"
+)
+  .then(function (response) {
+      return response.json();
+  })
+  .then(function (response) {
+      console.log("api response1", response);
+  });
+}
+
+// function for locations api 
+  function getActivities() {
+    var searchCity = $("#searchCity").val();
+   //fetch api locatiob
+   fetch(
+    "//maps.googleapis.com/maps/api/place/findplacefromtext/json?input=" +
+     searchCity +
+
+     // need to create key 
+    "&key="
+)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (response) {
+        console.log("api response2", response);
+    });
+  }
