@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script type= "text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+
   <title>Pointless Adventures</title>
 
     <!-- Navigation bar-->
@@ -59,15 +61,20 @@
 <div class="divider"></div>
 <img class="responsive-img" src="./assets/images/pexels-weather.jpg" alt="" />
 <div class="section white">
-  <h5 class="center-align">Weather</h5>
+  <h5 class="center-align">Whats the Weather?</h5>
   <p class="center-align">Stuff</p>
 </div>
 <div class="divider"></div>
 <img class="responsive-img" src="./assets/images/pexels-resturants.jpg" alt="" />
 <div class="section white">
-  <h5 class="center-align">Places</h5>
-  <p class="center-align">Stuff</p>
-</div>
+  <h5 class="center-align">What to do?!</h5>
+  <p class="center-align">Let's Explore!</p>
+</div> 
+
+<input id="my-input-searchbox" type="text" placeholder="What are we going to explore?">
+<div id="map"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2e7r9Fv_XJv1LXHlpE8jVRm2EbljKKxQ"
+&libraries=places&callback=initMap" async defer></script>
 
 
 
@@ -102,7 +109,8 @@
   <!--End of Footer -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="./assets/js/script.js"></script>
+  <script type= "text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhN-IG_CBVZePk_rCjdjpi5nv-XsO6GQY&libraries=places"></script>
 
-</body>
+  </body>
 
 </html>
