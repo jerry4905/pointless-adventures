@@ -12,8 +12,8 @@ function getWeather() {
 
  //fetch api wether
  fetch(
-  "https://api.openweathermap.org/data/2.5/forecast?q=" +
-   searchCity +
+  "https://api.openweathermap.org/data/2.5/forecast?q=paris" +
+   //searchCity +
   "&appid=8f62257571888eedbb0ada9d2502e1fa"
 )
   .then(function (response) {
@@ -30,7 +30,7 @@ function getWeather() {
    //fetch api locatiob
    fetch(
     "//maps.googleapis.com/maps/api/place/findplacefromtext/json?input=" +
-     searchCity +
+     //searchCity +
 
      // need to create key 
     "&key="
@@ -42,3 +42,16 @@ function getWeather() {
         console.log("api response2", response);
     });
   }
+
+  // add on click event to access fetch weather
+  $("#weather").on("click", function () {
+    getWeather();
+});
+  // add on click event to access fetch locations
+  $("#places").on("click", function () {
+    getActivites();
+});
+ // add on click event to access fetch flgiths
+ $("#flights").on("click", function () {
+  getFlights();
+});
