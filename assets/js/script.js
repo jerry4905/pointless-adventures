@@ -1,17 +1,19 @@
 // Listener for Nav bar
-//document.addEventListener('DOMContentLoaded', function() {
-  //    var elems = document.querySelectorAll('.sidenav');
-  //  var instances = M.Sidenav.init(elems, options);
-  //});
+document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
 
 // save search results in local storage 
 
 // function for weatehr api 
 function getWeather() {
+  //pull city to add to fetch
   var searchCity = $("#searchCity").val();
 
  //fetch api wether
  fetch(
+   //set to paris 
   "https://api.openweathermap.org/data/2.5/forecast?q=paris" +
    //searchCity +
   "&appid=8f62257571888eedbb0ada9d2502e1fa"
@@ -26,14 +28,16 @@ function getWeather() {
 
 // function for locations api 
   function getActivities() {
+    //pull input to add to fetch
     var searchCity = $("#searchCity").val();
    //fetch api locatiob
    fetch(
-    "//maps.googleapis.com/maps/api/place/findplacefromtext/json?input=" +
+     //set to golf
+    "//maps.googleapis.com/maps/api/place/findplacefromtext/json?input=golf" +
      //searchCity +
 
-     // need to create key 
-    "&key="
+     // google  key 
+    "&key=AIzaSyB2e7r9Fv_XJv1LXHlpE8jVRm2EbljKKxQ"
 )
     .then(function (response) {
         return response.json();
@@ -45,12 +49,12 @@ function getWeather() {
 
   // function for fightsapi 
   function getFlights() {
+    //pull city to add to fetch
     var searchCity = $("#searchCity").val();
    //fetch api locatiob
    fetch(
      // need correct api with endpoint
     "" +
-     //searchCity +
 
      // need to create key 
     "&key="
