@@ -43,6 +43,26 @@ function getWeather() {
     });
   }
 
+  // function for fightsapi 
+  function getFlights() {
+    var searchCity = $("#searchCity").val();
+   //fetch api locatiob
+   fetch(
+     // need correct api with endpoint
+    "" +
+     //searchCity +
+
+     // need to create key 
+    "&key="
+)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (response) {
+        console.log("api response3", response);
+    });
+  }
+
   // add on click event to access fetch weather
   $("#weather").on("click", function () {
     getWeather();
