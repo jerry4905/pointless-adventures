@@ -8,30 +8,57 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <title>Pointless Adventures</title>
+
+    <!-- Navigation bar-->
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Pointless Adventures</a>
+      </div>
+    </nav>
+    <!-- End of Navigation Bar-->
 </head>
 
 <body>
+  <!-- Hero Image 
+  <section class="hero">
+    <center><img src="./assets/images/pexels-brady-knoll.jpg" alt="" /></center>
+  </section>
 
-  <!-- Navigation bar-->
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Pointless Adventures</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li id="weather"><a href="weather.html">Weather</a></li>
-        <li id="flights"><a  href="flights.html">Flights</a></li>
-        <li id="places"><a href="places">Places</a></li>
-      </ul>
+  <div id="header-wrapper">
+    <div id="header" class="container">
+      <div id="logo">
+        <h1><a href="#">Pointless Adventures</a></h1>
+  </div>
+-->
+
+<div class="row">
+  <form class="col s12 grey darken-4">
+    <div class="row">
+      <div class="input-field col s12">
+        <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <label for="textarea1">What City?</label>
+      </div>
     </div>
-  </nav>
-
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">Weather</a></li>
-    <li><a href="badges.html">Flights</a></li>
-    <li><a href="collapsible.html">Places</a></li>
-
-  </ul>
-  <!-- End of Navigation Bar-->
+  </form>
+</div>
+<div class="divider"></div>
+<img class="responsive-img" src="./assets/images/pexels-weather.jpg" alt="" />
+<div class="section white">
+  <h5 class="center-align">Weather</h5>
+  <p class="center-align">Stuff</p>
+</div>
+<div class="divider"></div>
+<img class="responsive-img" src="./assets/images/pexels-jill-evans.jpg" alt="" />
+<div class="section white">
+  <h5 class="center-align">Flights</h5>
+  <p class="center-align">Stuff</p>
+</div>
+<div class="divider"></div>
+<img class="responsive-img" src="./assets/images/pexels-resturants.jpg" alt="" />
+<div class="section white">
+  <h5 class="center-align">Places</h5>
+  <p class="center-align">Stuff</p>
+</div>
 
 
 
@@ -40,14 +67,14 @@
 
 
   <!--Footer-->
-  <footer class="page-footer">
-    <div class="container">
+  <footer class="page-footer black">
+    <div class="container black">
       <div class="row">
-        <div class="col l6 s12">
+        <div class="col l6 s12 black">
           <h5 class="white-text">Footer Content</h5>
           <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
         </div>
-        <div class="col l4 offset-l2 s12">
+        <div class="col l4 offset-l2 s12 black">
           <h5 class="white-text">Links</h5>
           <ul>
             <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
@@ -57,7 +84,7 @@
         </div>
       </div>
     </div>
-    <div class="footer-copyright">
+    <div class="footer-copyright black">
       <div class="container">
         © 2021 Copyright Text
       </div>

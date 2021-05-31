@@ -1,11 +1,3 @@
-// Listener for Nav bar
-document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-  });
-
-// save search results in local storage 
-
 // function for weatehr api 
 function getWeather() {
   //pull city to add to fetch
