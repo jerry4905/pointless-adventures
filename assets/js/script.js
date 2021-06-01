@@ -1,3 +1,5 @@
+/*
+
 // function for weatehr api 
 function getWeather() {
   //pull city to add to fetch
