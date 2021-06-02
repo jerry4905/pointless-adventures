@@ -115,19 +115,19 @@ function initPage() {
         localStorage.setItem("search", JSON.stringify(searchHistory));
         renderSearchHistory();
     })
-    /*
+    
         // Clear History button
         clearEl.addEventListener("click", function () {
             localStorage.clear();
             searchHistory = [];
             renderSearchHistory();
         })
-    */
+    
 
     function k2f(K) {
         return Math.floor((K - 273.15) * 1.8 + 32);
     }
-
+/*
     function renderSearchHistory() {
         historyEl.innerText = "yes";
         for (let i = 0; i < searchHistory.length; i++) {
@@ -142,7 +142,7 @@ function initPage() {
             historyEl.append(historyItem);
         }
     }
-
+*/
     renderSearchHistory();
     if (searchHistory.length > 0) {
         getWeather(searchHistory[searchHistory.length - 1]);
