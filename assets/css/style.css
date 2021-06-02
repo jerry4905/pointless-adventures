@@ -10,3 +10,13 @@ body {
   max-width: 100%;
   height: auto;
 }
+
+
+ 
+table, h5 {
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: black;
+}
