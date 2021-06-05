@@ -10,8 +10,24 @@ function initPage() {
     // Assigning a unique API to a variable
     const APIKey = "&appid=8f62257571888eedbb0ada9d2502e1fa";
 
+    function getPlaces() {
+        var searchCity = $("#enter-city").val();
+    
+        //fetch api 
+        fetch(
+            "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=" + searchCity + "&inputtype=textquery&fields=photos,formatted_address,name,opening_hours,rating&locationbias=circle:2000@47.6918452,-122.2226413&key=AIzaSyCNtC_hpAU4T7PeRgzm9u63MVTF5KGFZdo"
+        )
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (response) {
+                console.log("api response places", response);
+            })
+        };
+
     function getWeather() {
         var searchCity = $("#enter-city").val();
+        getPlaces();
 
         //fetch api 
         fetch(
@@ -147,6 +163,8 @@ function initPage() {
     if (searchHistory.length > 0) {
         getWeather(searchHistory[searchHistory.length - 1]);
     }
-}
+};
+
+    
 
 initPage();
