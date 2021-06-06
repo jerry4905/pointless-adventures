@@ -1,6 +1,6 @@
 # Pointless Adventures - Project 1
 
-UCLA Bootcamp Project 1- Tima and Jerry Carmona
+UCLA Bootcamp Project 1- Tima Nlemvo and Jerry Carmona
 
 This was the first project for the full stack web development program at UCLA, in which the goal was to build an interactive application that:
 
