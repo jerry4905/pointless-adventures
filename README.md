@@ -1,4 +1,4 @@
-# Pointm=less Adventures - Project 1
+# Pointless Adventures - Project 1
 
 UCLA Bootcamp Project 1- Tima and Jerry Carmona
 
